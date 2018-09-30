@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Галерея</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__close-menu" type="button">x</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo.png" alt="Логотип сайта" />
+      </a>
+      <button class="page-header__open-menu" type="button"></button>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__header">Фото и видео</h1>
+      <section class="photos">
+        <p class="photos__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="photos__list">
+          <li class="photos__item photo">
+            <img class="photo__picture" src="img/photo-1.png" alt="Неродные просторы" />
+            <h3 class="photo__header">Неродные просторы</h3>
+            <p class="photo__author">Автор фото: Борис</p>
+            <p class="photo__count-likes">1350</p>
+          </li>
+          <li class="photos__item photo">
+            <img class="photo__picture" src="img/photo-2.png" alt="Местная растительность" />
+            <h3 class="photo__header">Местная растительность</h3>
+            <p class="photo__author">Автор фото: Сергей</p>
+            <p class="photo__count-likes">143</p>
+          </li>
+          <li class="photos__item photo">
+            <img class="photo__picture" src="img/photo-3.png" alt="Дорога на север" />
+            <h3 class="photo__header">Дорога на север</h3>
+            <p class="photo__author">Автор фото: Петр</p>
+            <p class="photo__count-likes">96</p>
+          </li>
+          <li class="photos__item photo">
+            <img class="photo__picture" src="img/photo-4.png" alt="Мост дьявола" />
+            <h3 class="photo__header">Мост дьявола</h3>
+            <p class="photo__author">Автор фото: Антон</p>
+            <p class="photo__count-likes">254</p>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__header">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="video__content" src="videos/video.mp4" controls></video>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#Visitsedona</p>
+      <ul class="page-footer__social-list  social-list">
+        <li class="social-list__item social-list__item--twitter"></li>
+        <li class="social-list__item social-list__item--facebook"></li>
+        <li class="social-list__item social-list__item--youtube"></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a class="copyright__link" href="#">
+          <img class="copyright__picture" src="img/htmlacademy.png" alt="Htmlacademy logo" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
