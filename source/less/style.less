@@ -1,0 +1,42 @@
+@path-fonts: "../fonts";
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("@{path-fonts}/ptsans.woff2") format("woff2"),
+       url("@{path-fonts}/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("@{path-fonts}/ptsansbold.woff2") format("woff2"),
+       url("@{path-fonts}/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import "page-header.less";
+@import "main-nav.less";
+@import "greeting.less";
+@import "advantage.less";
+@import "advantage-expanded.less";
+@import "search.less";
