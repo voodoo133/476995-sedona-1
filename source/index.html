@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Главная</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__close-menu" type="button">x</button>
+        <button class="main-nav__close-menu" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -24,7 +26,7 @@
         </ul>
       </nav>
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo.png" alt="Логотип сайта" />
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта" />
       </a>
       <button class="page-header__open-menu" type="button"></button>
     </header>
@@ -44,17 +46,17 @@
             <h3 class="advantage-expanded__header">Настоящий городок</h3>
             <p class="advantage-expanded__number">№1</p>
             <p class="advantage-expanded__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="advantage-expanded__picture" src="img/advantage-pic-1.png" alt="Фотография города" />
+            <img class="advantage-expanded__picture" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фотография города" />
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--apartments">
             <h3 class="advantage__header">Жилье</h3>
             <p class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--souvenirs">
             <h3 class="advantage__header">Сувениры</h3>
             <p class="advantage__description">Не только китайского, но и местного производства!</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--food">
             <h3 class="advantage__header">Еда</h3>
             <p class="advantage__description">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
@@ -62,21 +64,21 @@
             <h3 class="advantage-expanded__header">Там есть мост дьявола</h3>
             <p class="advantage-expanded__number">№2</p>
             <p class="advantage-expanded__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantage-expanded__picture" src="img/advantage-pic-2.png" alt="Фотография каньона" />
+            <img class="advantage-expanded__picture" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография каньона" />
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--numeric">
             <h3 class="advantage__header">Небольшая площадь</h3>
-            <h3 class="advantage__number">№3</h3>
+            <p class="advantage__number">№3</p>
             <p class="advantage__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--numeric">
             <h3 class="advantage__header">Красивая дорога</h3>
-            <h3 class="advantage__number">№4</h3>
+            <p class="advantage__number">№4</p>
             <p class="advantage__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item advantage">
+          <li class="advantages__item advantage advantage--numeric">
             <h3 class="advantage__header">Мало туристов</h3>
-            <h3 class="advantage__number">№5</h3>
+            <p class="advantage__number">№5</p>
             <p class="advantage__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
@@ -88,7 +90,7 @@
       </section>
       <section class="map">
         <h2 class="map__header visually-hidden">Карта</h2>
-        <img class="map__picture" src="img/map.png" alt="Карта" />
+        <img class="map__picture" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта" />
       </section>
     </main>
     <footer class="page-footer">
@@ -101,7 +103,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="#">
-          <img class="copyright__picture" src="img/htmlacademy.png" alt="Htmlacademy logo" />
+          <img class="copyright__picture" src="img/htmlacademy.svg" width="29" height="36" alt="Htmlacademy logo" />
         </a>
       </div>
     </footer>
