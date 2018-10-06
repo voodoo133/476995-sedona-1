@@ -8,27 +8,29 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__close-menu" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта" />
-      </a>
-      <button class="page-header__open-menu" type="button"></button>
+      <div class="wrapper wrapper--page-header">
+        <nav class="main-nav">
+          <button class="main-nav__close-menu" type="button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта" />
+        </a>
+        <button class="page-header__open-menu" type="button"></button>
+      </div>
     </header>
     <main class="page-main page-main--inner-pages">
       <div class="page-main__logo"></div>
@@ -79,8 +81,10 @@
           <h2 class="video__header">Все еще сомневаетесь?</h2>
           <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="video__content">
-          <img class="video__preview" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео" />
+        <div class="wrapper wrapper--video-content">
+          <div class="video__content">
+            <img class="video__preview" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео" />
+          </div>
         </div>
       </section>
     </main>
