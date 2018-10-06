@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона - Форма отзыва</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
@@ -30,74 +31,74 @@
       <button class="page-header__open-menu" type="button"></button>
     </header>
     <main class="page-main">
-      <div class="page-main__logo-wrap">
-        <img class="page-main__logo" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Лого Седоны" />
-      </div>
+      <div class="page-main__logo"></div>
       <section class="feedback">
-        <h2 class="feedback__header">Оставьте свой отзыв</h2>
-        <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback-form__group">
-            <legend class="feedback-form__group-header">Представьтесь:</legend>
-            <label class="feedback-form__field-name">Имя*
-              <input class="feedback-form__field feedback-form__field--input" type="text" name="first_name" value="Петр" />
-            </label>
-            <label class="feedback-form__field-name">Фамилия*
-              <input class="feedback-form__field feedback-form__field--input" type="text" name="second_name" value="Иванов" />
-            </label>
-            <label class="feedback-form__field-name">Отчество
-              <input class="feedback-form__field feedback-form__field--input" type="text" name="middle_name" value="Александрович" />
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__group">
-            <legend class="feedback-form__group-header">Контактная информация:</legend>
-            <label class="feedback-form__field-name">Контактный телефон*:
-              <input class="feedback-form__field feedback-form__field--input" type="tel" name="phone" placeholder="Введите телефон" />
-            </label>
-            <label class="feedback-form__field-name">Электронная почта*:
-              <input class="feedback-form__field feedback-form__field--input" type="email" name="email" placeholder="Введите e-mail" />
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--radio-buttons">
-            <legend class="feedback-form__group-header">Ваше общее впечатление:</legend>
-            <label class="feedback-form__field-name feedback-form__field-name--radio">
-              <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Скорее положительное" checked/>
-              Скорее положительное
-            </label>
-            <label class="feedback-form__field-name feedback-form__field-name--radio">
-              <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Скорее отрицательное" />
-              Скорее отрицательное
-            </label>
-            <label class="feedback-form__field-name feedback-form__field-name--radio">
-              <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Затрудняюсь ответить" />
-              Затрудняюсь ответить
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--checkboxes">
-            <legend class="feedback-form__group-header">Посещенные достопримечательности:</legend>
-            <label class="feedback-form__field-name feedback-form__field-name--checkbox">
-              <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Мост дьявола" checked/>
-              Мост дьявола
-            </label>
-            <label class="feedback-form__field-name feedback-form__field-name--checkbox">
-              <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Гора-Колокол" checked/>
-              Гора-Колокол
-            </label>
-            <label class="feedback-form__field-name feedback-form__field-name--checkbox">
-              <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Слайд-парк" checked/>
-              Слайд-парк
-            </label>
-            <label class="feedback-form__field-name feedback-form__field-name--checkbox">
-              <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Красные скалы" />
-              Красные скалы
-            </label>
-          </fieldset>
-          <fieldset class="feedback-form__group">
-            <legend class="feedback-form__group-header">Опишите свои эмоции:</legend>
-            <textarea class="feedback-form__field feedback-form__field--textarea" name="text_description">Опишите подробно все свои восторги</textarea>
-          </fieldset>
-          <button class="feedback-form__button" type="submit">Отправить отзыв</button>
-        </form>
+        <div class="wrapper">
+          <h2 class="feedback__header">Оставьте свой отзыв</h2>
+          <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="feedback-form__group">
+              <legend class="feedback-form__group-header">Представьтесь:</legend>
+              <label class="feedback-form__field-name">Имя*
+                <input class="feedback-form__field feedback-form__field--input" type="text" name="first_name" value="Петр" />
+              </label>
+              <label class="feedback-form__field-name">Фамилия*
+                <input class="feedback-form__field feedback-form__field--input" type="text" name="second_name" value="Иванов" />
+              </label>
+              <label class="feedback-form__field-name">Отчество
+                <input class="feedback-form__field feedback-form__field--input" type="text" name="middle_name" value="Александрович" />
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__group">
+              <legend class="feedback-form__group-header">Контактная информация:</legend>
+              <label class="feedback-form__field-name">Контактный телефон*:
+                <input class="feedback-form__field feedback-form__field--input" type="tel" name="phone" placeholder="Введите телефон" />
+              </label>
+              <label class="feedback-form__field-name">Электронная почта*:
+                <input class="feedback-form__field feedback-form__field--input" type="email" name="email" placeholder="Введите e-mail" />
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__group feedback-form__group--radio-buttons">
+              <legend class="feedback-form__group-header">Ваше общее впечатление:</legend>
+              <label class="feedback-form__field-name feedback-form__field-name--radio">
+                <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Скорее положительное" checked/>
+                Скорее положительное
+              </label>
+              <label class="feedback-form__field-name feedback-form__field-name--radio">
+                <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Скорее отрицательное" />
+                Скорее отрицательное
+              </label>
+              <label class="feedback-form__field-name feedback-form__field-name--radio">
+                <input class="feedback-form__field feedback-form__field--radio" type="radio" name="rating" value="Затрудняюсь ответить" />
+                Затрудняюсь ответить
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__group feedback-form__group--checkboxes">
+              <legend class="feedback-form__group-header">Посещенные достопримечательности:</legend>
+              <label class="feedback-form__field-name feedback-form__field-name--checkbox">
+                <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Мост дьявола" checked/>
+                Мост дьявола
+              </label>
+              <label class="feedback-form__field-name feedback-form__field-name--checkbox">
+                <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Гора-Колокол" checked/>
+                Гора-Колокол
+              </label>
+              <label class="feedback-form__field-name feedback-form__field-name--checkbox">
+                <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Слайд-парк" checked/>
+                Слайд-парк
+              </label>
+              <label class="feedback-form__field-name feedback-form__field-name--checkbox">
+                <input class="feedback-form__field feedback-form__field--checkbox" type="checkbox" name="visited" value="Красные скалы" />
+                Красные скалы
+              </label>
+            </fieldset>
+            <fieldset class="feedback-form__group">
+              <legend class="feedback-form__group-header">Опишите свои эмоции:</legend>
+              <textarea class="feedback-form__field feedback-form__field--textarea" name="text_description">Опишите подробно все свои восторги</textarea>
+            </fieldset>
+            <button class="feedback-form__button" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -110,7 +111,7 @@
       <div class="page-footer__copyright copyright">
         <span class="copyright__text">Разработано:</span>
         <a class="copyright__link" href="#">
-          <img class="copyright__picture" src="img/htmlacademy.svg" width="29" height="36" alt="Htmlacademy logo" />
+          <img class="copyright__picture" src="img/logo-htmlacademy.svg" width="26" height="34" alt="Htmlacademy logo" />
         </a>
       </div>
     </footer>
