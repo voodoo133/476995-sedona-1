@@ -1,3 +1,11 @@
+.advantages__header-wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .advantages__header {
   margin: 40px 0 50px 0;
   padding: 0;
@@ -10,4 +18,17 @@
 
 .advantages__list {
   .reset-list();
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__header-wrapper {
+    width: 495px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

@@ -1,6 +1,6 @@
 .feedback-form__group {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 0;
+  padding: 20px 0;
 
   border: none;
 }
@@ -49,4 +49,58 @@
   border: none;
 
   cursor: pointer;
+}
+
+.feedback-form__notification {
+  display: none;
+  margin: 50px 0 0 auto;
+  align-self: center;
+
+  font-size: 14px;
+  color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__group {
+    width: 100%;
+
+    &--short {
+      width: 324px;
+    }
+
+    &--main-rating {
+      order: 1;
+    }
+
+    &--greeting {
+      order: 2;
+    }
+
+    &--personal-info {
+      order: 3;
+    }
+
+    &--visited {
+      order: 4;
+    }
+
+    &--text-rating {
+      order: 5;
+    }
+  }
+
+  .feedback-form__button {
+    order: 6;
+  }
+
+  .feedback-form__notification {
+    display: block;
+
+    order: 7;
+  }
 }

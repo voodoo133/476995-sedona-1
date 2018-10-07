@@ -39,11 +39,36 @@ a {
 }
 
 .wrapper--page-header,
-.wrapper--advantages,
-.wrapper--video-content {
+.wrapper--advantages {
   width: auto;
   padding-left: 0;
   padding-right: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .wrapper--page-header {
+    width: 768px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wrapper--advantages {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wrapper--page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @import "main-nav.less";

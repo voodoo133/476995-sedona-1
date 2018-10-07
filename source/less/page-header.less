@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.page-header__logo-image--tablet {
+  display: none;
+}
+
 .page-header__open-menu {
   position: absolute;
   right: 15px;
@@ -20,4 +24,33 @@
 
   border: none;
   background: transparent url(../img/icon-menu.svg) no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    position: relative;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: auto;
+    height: auto;
+
+    transform: translateX(-50%);
+  }
+
+  .page-header__logo-image--mobile {
+    display: none;
+  }
+
+  .page-header__logo-image--tablet {
+    display: block;
+  }
+
+  .page-header__open-menu {
+    display: none;
+  }
 }

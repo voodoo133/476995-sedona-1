@@ -69,3 +69,51 @@
 .main-nav__link {
   color: #ffffff;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000; 
+    
+    background-color: #ffffff;
+  }
+
+  .main-nav__close-menu {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    border: none;
+
+    &:nth-child(1) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 80px;
+      margin-right: auto;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+      margin-right: 50px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 25px;
+    }
+
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+
+  .main-nav__link {
+    color: #000000;
+  }
+}
