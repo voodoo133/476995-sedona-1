@@ -2,97 +2,129 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона - Галерея</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
-  <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__close-menu" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru">Htmlacademy</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="85" alt="Логотип сайта" />
-      </a>
-      <button class="page-header__open-menu" type="button"></button>
-    </header>
-    <main class="page-main page-main--inner-pages">
-      <div class="page-main__logo-wrap">
-        <img class="page-main__logo" src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Лого Седоны" />
-      </div>
-      <h1 class="page-main__header">Фото и видео</h1>
-      <section class="photos">
-        <p class="photos__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <ul class="photos__list">
-          <li class="photos__item photo">
-            <a class="photo__link" href="img/photo-sunset-mobile@1x.jpg">
-              <img class="photo__picture" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы" />
-            </a>
-            <h3 class="photo__header">Неродные просторы</h3>
-            <p class="photo__author">Автор фото: Борис</p>
-            <p class="photo__count-likes">1350</p>
-          </li>
-          <li class="photos__item photo">
-            <a class="photo__link" href="img/photo-cactus-mobile@1x.jpg">
-              <img class="photo__picture" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность" />
-            </a>
-            <h3 class="photo__header">Местная растительность</h3>
-            <p class="photo__author">Автор фото: Сергей</p>
-            <p class="photo__count-likes">143</p>
-          </li>
-          <li class="photos__item photo">
-            <a class="photo__link" href="img/photo-roads-mobile@1x.jpg"
-              <img class="photo__picture" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север" />
-            </a>
-            <h3 class="photo__header">Дорога на север</h3>
-            <p class="photo__author">Автор фото: Петр</p>
-            <p class="photo__count-likes">96</p>
-          </li>
-          <li class="photos__item photo">
-            <a class="photo__link" href="img/photo-bridge-mobile@1x.jpg">
-              <img class="photo__picture" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола" />
-            </a>
-            <h3 class="photo__header">Мост дьявола</h3>
-            <p class="photo__author">Автор фото: Антон</p>
-            <p class="photo__count-likes">254</p>
-          </li>
-        </ul>
-      </section>
-      <section class="video">
-        <h2 class="video__header">Все еще сомневаетесь?</h2>
-        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <div class="video__content">
-          <img class="video__preview" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео" />
+  <body class="page-body">
+    <div class="body-wrapper">
+      <header class="page-header">
+        <div class="wrapper wrapper--page-header">
+          <nav class="main-nav">
+            <button class="main-nav__close-menu" type="button"></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link reset-decoration" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link reset-decoration" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link reset-decoration" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link reset-decoration" href="https://htmlacademy.ru">Htmlacademy</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="page-header__logo reset-decoration" href="#">
+            <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип сайта" />
+            <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип сайта" />
+            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="187" height="96" alt="Логотип сайта" />
+          </a>
+          <button class="page-header__open-menu" type="button"></button>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__hashtag">#Visitsedona</p>
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--twitter"></li>
-        <li class="social__item social__item--facebook"></li>
-        <li class="social__item social__item--youtube"></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано:</span>
-        <a class="copyright__link" href="#">
-          <img class="copyright__picture" src="img/htmlacademy.svg" width="29" height="36" alt="Htmlacademy logo" />
-        </a>
-      </div>
-    </footer>
+      </header>
+      <main class="page-main page-main--inner-pages">
+        <div class="page-main__logo"></div>
+        <div class="wrapper">
+          <h1 class="page-main__header">Фото и видео</h1>
+        </div>
+        <section class="photos">
+          <div class="wrapper">
+            <p class="photos__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            <ul class="photos__list">
+              <li class="photos__item photo">
+                <a class="photo__link reset-decoration" href="img/photo-sunset-mobile@1x.jpg">
+                  <img class="photo__picture photo__picture--mobile" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы" />
+                  <img class="photo__picture photo__picture--tablet" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400" alt="Неродные просторы" />
+                  <img class="photo__picture photo__picture--desktop" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Неродные просторы" />
+                </a>
+                <div class="photo__text-wrapper">
+                  <h3 class="photo__header">Неродные просторы</h3>
+                  <p class="photo__author">Автор фото: Борис</p>
+                  <p class="photo__count-likes">1350</p>
+                </div>
+              </li>
+              <li class="photos__item photo">
+                <a class="photo__link reset-decoration" href="img/photo-cactus-mobile@1x.jpg">
+                  <img class="photo__picture photo__picture--mobile" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность" />
+                  <img class="photo__picture photo__picture--tablet" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="Местная растительность" />
+                  <img class="photo__picture photo__picture--desktop" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Местная растительность" />
+                </a>
+                <div class="photo__text-wrapper">
+                  <h3 class="photo__header">Местная растительность</h3>
+                  <p class="photo__author">Автор фото: Сергей</p>
+                  <p class="photo__count-likes">143</p>
+                </div>
+              </li>
+              <li class="photos__item photo">
+                <a class="photo__link reset-decoration" href="img/photo-roads-mobile@1x.jpg">
+                  <img class="photo__picture photo__picture--mobile" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север" />
+                  <img class="photo__picture photo__picture--tablet" src="img/photo-roads-tablet@1x.jpg" width="324" height="267" alt="Дорога на север" />
+                  <img class="photo__picture photo__picture--desktop" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Дорога на север" />
+                </a>
+                <div class="photo__text-wrapper">
+                  <h3 class="photo__header">Дорога на север</h3>
+                  <p class="photo__author">Автор фото: Петр</p>
+                  <p class="photo__count-likes">96</p>
+                </div>
+              </li>
+              <li class="photos__item photo">
+                <a class="photo__link reset-decoration" href="img/photo-bridge-mobile@1x.jpg">
+                  <img class="photo__picture photo__picture--mobile" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола" />
+                  <img class="photo__picture photo__picture--tablet" src="img/photo-bridge-tablet@1x.jpg" width="324" height="267" alt="Мост дьявола" />
+                  <img class="photo__picture photo__picture--desktop" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Мост дьявола" />
+                </a>
+                <div class="photo__text-wrapper">
+                  <h3 class="photo__header">Мост дьявола</h3>
+                  <p class="photo__author">Автор фото: Антон</p>
+                  <p class="photo__count-likes">254</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="video">
+          <div class="wrapper">
+            <h2 class="video__header">Все еще сомневаетесь?</h2>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video__content-wrapper">
+            <div class="video__content">
+              <img class="video__preview video__preview--mobile" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео" />
+              <img class="video__preview video__preview--tablet" src="img/video-tablet@1x.jpg" width="648" height="499" alt="Превью видео" />
+              <img class="video__preview video__preview--desktop" src="img/video-desktop@1x.jpg" width="800" height="500" alt="Превью видео" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <div class="wrapper wrapper--page-footer">
+          <p class="page-footer__hashtag">#Visitsedona</p>
+          <ul class="page-footer__social social">
+            <li class="social__item social__item--twitter"></li>
+            <li class="social__item social__item--facebook"></li>
+            <li class="social__item social__item--youtube"></li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link reset-decoration" href="#">
+              <img class="copyright__picture" src="img/logo-htmlacademy.svg" width="26" height="34" alt="Htmlacademy logo" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

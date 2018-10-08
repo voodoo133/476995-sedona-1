@@ -1,5 +1,6 @@
 .advantage--numeric {
   background-color: #eeeeee;
+  text-align: center;
 
   &:last-child {
     padding-bottom: 30px;
@@ -8,6 +9,14 @@
 
 .advantage--food {
   padding-bottom: 45px;
+}
+
+.advantage__wrapper {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantage__header {
@@ -33,4 +42,41 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+}
+
+@media (min-width: @tablet-width) {
+  .advantage--apartments {
+    margin-left: auto;
+  }
+
+  .advantage--food {
+    margin-right: auto;
+  }
+
+  .advantage--small-area,
+  .advantage--few-tourists {
+    flex-grow: 1;
+  }
+
+  .advantage__wrapper {
+    width: 256px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    &--small-area {
+      margin-left: auto;
+    }
+
+    &--few-tourists {
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage__wrapper {
+    width: 400px;
+  }
 }

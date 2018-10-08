@@ -1,9 +1,14 @@
+.photo__text-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .photo__header {
-  margin: 20px 0 0 0;
+  margin: 0;
   padding: 0;
 
   font-size: 14px;
-  line-break: 24px;
+  line-height: 24px;
   font-weight: 700;
 }
 
@@ -23,4 +28,73 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.photo__picture--tablet,
+.photo__picture--desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .photo {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+
+  .photo__picture--mobile {
+    display: none;
+  }
+
+  .photo__picture--tablet {
+    display: block;
+  }
+
+  .photo__text-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo__header {
+    margin: 0 0 0 35px;
+  }
+
+  .photo__author {
+    margin: 0 0 0 35px;
+  }
+
+  .photo__count-likes {
+    margin: -35px 20px 10px 0;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    position: relative;
+  }
+
+  .photo__picture--tablet {
+    display: none;
+  }
+
+  .photo__picture--desktop {
+    display: block;
+  }
+
+  .photo__text-wrapper {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    color: #ffffff;
+  }
+
+  .photo__author {
+    color: #ffffff;
+  }
 }

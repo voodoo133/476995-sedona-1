@@ -1,32 +1,10 @@
 @import "variables.less";
+@import "mixins.less";
+@import "normalize.less";
 @import "fonts.less";
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #000000;
-  text-transform: uppercase;
-
-  background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
+@import "globals.less";
+@import "wrapper.less";
+@import "body-wrapper.less";
 @import "main-nav.less";
 @import "page-header.less";
 @import "greeting.less";
