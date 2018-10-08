@@ -10,7 +10,8 @@
   text-align: center;
 }
 
-.page-header__logo-image--tablet {
+.page-header__logo-image--tablet,
+.page-header__logo-image--desktop {
   display: none;
 }
 
@@ -23,7 +24,7 @@
   height: 22px;
 
   border: none;
-  background: transparent url(../img/icon-menu.svg) no-repeat;
+  background: transparent url("../img/icon-menu.svg") no-repeat;
 }
 
 @media (min-width: @tablet-width) {
@@ -52,5 +53,15 @@
 
   .page-header__open-menu {
     display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-image--tablet {
+    display: none;
+  }
+
+  .page-header__logo-image--desktop {
+    display: block;
   }
 }

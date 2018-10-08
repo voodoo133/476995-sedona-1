@@ -50,24 +50,46 @@ a {
     width: 648px;
     padding-left: 60px;
     padding-right: 60px;
+
+    &--page-header {
+      width: 768px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--advantages {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--page-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .body-wrapper {
+    width: 1200px;
+    margin: 0 auto;
   }
 
-  .wrapper--page-header {
-    width: 768px;
+  .wrapper {
+    width: auto;
     padding-left: 0;
     padding-right: 0;
-  }
 
-  .wrapper--advantages {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
+    &--page-footer {
+      width: 960px;
+    }
 
-  .wrapper--page-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    &--feedback {
+      width: 960px;
+      margin: 0 auto;
+    }
   }
 }
 

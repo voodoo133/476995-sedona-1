@@ -2,16 +2,27 @@
   text-align: center;
 }
 
-.map__picture--tablet {
+.map__picture--tablet,
+.map__picture--desktop {
   display: none;
 }
 
-@media (min-width: @tablet-width) { 
+@media (min-width: @tablet-width) {
   .map__picture--mobile {
     display: none;
   }
 
   .map__picture--tablet {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map__picture--tablet {
+    display: none;
+  }
+
+  .map__picture--desktop {
     display: inline;
   }
 }

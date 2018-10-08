@@ -45,7 +45,8 @@
   display: block;
   margin-top: 45px;
 
-  &--tablet {
+  &--tablet,
+  &--desktop {
     display: none;
   }
 }
@@ -91,6 +92,26 @@
   }
 
   .advantage-expanded__picture--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantage-expanded__text-wrapper {
+    width: 400px;
+  }
+
+  .advantage-expanded__picture-wrapper {
+    width: 800px;
+    height: 255px;
+    overflow: hidden;
+  }
+
+  .advantage-expanded__picture--tablet {
+    display: none;
+  }
+
+  .advantage-expanded__picture--desktop {
     display: block;
   }
 }

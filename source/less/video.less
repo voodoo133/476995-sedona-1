@@ -32,12 +32,13 @@
 .video__preview {
   display: block;
 
-  &--tablet {
+  &--tablet,
+  &--desktop {
     display: none;
   }
 }
 
-@media (min-width: @tablet-width) { 
+@media (min-width: @tablet-width) {
   .video__header {
     width: 355px;
 
@@ -64,5 +65,21 @@
 
   .video__preview--tablet {
     display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video__preview--tablet {
+    display: none;
+  }
+
+  .video__preview--desktop {
+    display: block;
+  }
+
+  .video__content-wrapper {
+    width: 800px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
