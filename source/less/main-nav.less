@@ -10,36 +10,21 @@
 
 .main-nav__close-menu {
   position: absolute;
-  top: 15px;
+  top: 17px;
   right: 20px;
 
   width: 23px;
   height: 23px;
+  padding: 0;
 
+  background: transparent url("@{path-images}/icon-cross.svg") no-repeat;
   border: none;
-  background-color: transparent;
 
   cursor: pointer;
+}
 
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    width: 3px;
-    height: 100%;
-
-    background-color: #ffffff;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
+.main-nav__close-menu-icon {
+  fill: #ffffff;
 }
 
 .main-nav__list {
@@ -47,8 +32,7 @@
 }
 
 .main-nav__item {
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding: 12px 0;
 
   text-align: center;
 
@@ -88,6 +72,8 @@
   }
 
   .main-nav__item {
+    padding: 20px 0;
+
     border: none;
 
     &:nth-child(1) {
@@ -119,19 +105,23 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__item:nth-child(1) {
-    margin-left: 90px;
-  }
+  .main-nav__item {
+    padding: 16px 0;
 
-  .main-nav__item:nth-child(2) {
-    margin-left: 160px;
-  }
+    &:nth-child(1) {
+      margin-left: 90px;
+    }
 
-  .main-nav__item:nth-child(3) {
-    margin-right: 140px;
-  }
+    &:nth-child(2) {
+      margin-left: 160px;
+    }
 
-  .main-nav__item:nth-child(4) {
-    margin-right: 70px;
+    &:nth-child(3) {
+      margin-right: 140px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 70px;
+    }
   }
 }
