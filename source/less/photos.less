@@ -3,7 +3,8 @@
 }
 
 .photos__text {
-  margin: 35px 0 0 0;
+  width: 275px;
+  margin: 35px auto 0;
   padding: 0;
 
   font-size: 14px;
@@ -23,6 +24,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photos__wrapper {
+    width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
   .photos__text {
     width: 435px;
     margin-left: auto;
@@ -37,5 +44,13 @@
 
   .photos__item {
     padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photos__wrapper {
+    width: 1200px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
