@@ -1,13 +1,15 @@
-.advantage--numeric {
-  text-align: center;
-
-  &:last-child {
-    padding-bottom: 30px;
+.advantage {
+  &--apartments {
+    padding-top: 9px;
   }
-}
 
-.advantage--food {
-  padding-bottom: 40px;
+  &--food {
+    padding-bottom: 35px;
+  }
+
+  &--numeric {
+    text-align: center;
+  }
 }
 
 .advantage__wrapper {
@@ -26,7 +28,7 @@
   position: relative;
 
   margin: 0 0 0 50px;
-  padding: 30px 0 0 0;
+  padding: 27px 0 0 0;
 
   font-size: 18px;
   font-weight: 700;
@@ -35,10 +37,10 @@
     content: "";
 
     position: absolute;
-    top: 20px;
-    left: -45px;
+    top: 17px;
+    left: -50px;
 
-    width: 32px;
+    width: 42px;
     height: 38px;
 
     background-position: center;
@@ -49,6 +51,7 @@
 
 .advantage--numeric .advantage__header {
   margin-left: 0;
+  padding-top: 27px;
 }
 
 .advantage--apartments .advantage__header::before {
@@ -60,11 +63,15 @@
 }
 
 .advantage--food .advantage__header::before {
+  width: 38px;
+  height: 45px;
+
+
   background-image: url("@{path-images}/icon-burger.svg");
 }
 
 .advantage__number {
-  margin: 20px 0 0 0;
+  margin: 9px 0 0 0;
   padding: 0;
 
   font-size: 14px;
@@ -88,7 +95,7 @@
 }
 
 .advantage__description {
-  margin: 20px 0 0 50px;
+  margin: 15px 0 0 50px;
   padding: 0;
 
   font-size: 14px;
@@ -98,7 +105,7 @@
 
 .advantage--numeric .advantage__description {
   margin-left: 0;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
 
   border-bottom: 1px solid #d6d6d6;
 }
