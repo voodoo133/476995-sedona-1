@@ -120,12 +120,30 @@
 }
 
 @media (min-width: @tablet-width) {
+  .advantage--apartments {
+    padding-top: 0;
+  }
+
   .advantage__wrapper {
     width: 256px;
     padding-left: 43px;
     padding-right: 43px;
-
     box-sizing: border-box;
+  }
+
+  .advantage--apartments .advantage__wrapper {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .advantage--food .advantage__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantage--beautiful-road .advantage__wrapper {
+    padding-left: 53.5px;
+    padding-right: 53.5px;
   }
 
   .advantage__header {
@@ -136,14 +154,24 @@
     text-align: center;
 
     &::before {
-      top: 50px;
+      top: 55px;
       left: 50%;
 
-      width: 80px;
-      height: 80px;
+      width: 74px;
+      height: 82px;
 
       transform: translateX(-50%);
     }
+  }
+
+  .advantage--food .advantage__header::before {
+    width: 74px;
+    height: 82px;
+  }
+
+  .advantage--souvenirs .advantage__header::before {
+    width: 63px;
+    height: 77px;
   }
 
   .advantage--numeric .advantage__header {
@@ -151,13 +179,20 @@
   }
 
   .advantage__description {
-    margin-left: 0;
+    margin: 20px 0 26px;
 
     text-align: center;
   }
 
   .advantage--numeric .advantage__description {
+    margin-top: 22px;
+    padding-bottom: 45px;
+
     border-bottom: none;
+  }
+
+  .advantage__line-delimiter--mobile {
+    display: none;
   }
 
   .advantage__line-delimiter--tablet {
