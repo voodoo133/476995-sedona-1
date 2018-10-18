@@ -87,6 +87,8 @@
   background: transparent;
   border: none;
 
+  cursor: pointer;
+
   &--replay {
     width: 16px;
     height: 20px;
@@ -108,9 +110,16 @@
   }
 }
 
-.video__button--subtitles .video__button-icon,
-.video__button--fullscreen .video__button-icon {
-  fill: #454545;
+.video__button .video__button-icon {
+  fill: #a4a4a4;
+}
+
+.video__button:hover .video__button-icon {
+  fill: #333333;
+}
+
+.video__button:active .video__button-icon {
+  fill: #b8b8b8;
 }
 
 @media (min-width: @tablet-width) {
@@ -194,10 +203,16 @@
     order: 4;
   }
 
-  .video__button-icon,
-  .video__button--subtitles .video__button-icon,
-  .video__button--fullscreen .video__button-icon {
+  .video__button .video__button-icon {
     fill: #ffffff;
+  }
+
+  .video__button:hover .video__button-icon {
+    fill: #c2c2c2;
+  }
+
+  .video__button:active .video__button-icon {
+    fill: #949494;
   }
 }
 

@@ -45,6 +45,8 @@
     font-weight: 700;
     color: #000000;
     text-transform: none;
+
+    cursor: pointer;
   }
 
   &--radio::before,
@@ -72,6 +74,16 @@
 
   &--email::after {
     background: #e6e6e6 url("@{path-images}/icon-mail.svg") center center no-repeat;
+  }
+
+  &--radio:hover::before,
+  &--checkbox:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &--radio:active::before,
+  &--checkbox:active::before {
+    background-color: #d5d5d5;
   }
 }
 
@@ -124,14 +136,46 @@
 
     resize: none;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 16px;
+
+    background-color: #ffffff;
+
+    border: 4px solid #e5e5e5;
+  }
 }
 
-.feedback-form__field--radio:checked + .feedback-form__field-name::before {
-  background: radial-gradient(#000000, #000000 30%, #f2f2f2 30%, #f2f2f2 100%);
+.feedback-form__field--radio:checked + .feedback-form__field-name {
+  &::before {
+    background: radial-gradient(#333333, #333333 30%, #f2f2f2 30%, #f2f2f2 100%);
+  }
+
+  &:hover::before {
+    background: radial-gradient(#333333, #333333 30%, #e5e5e5 30%, #e5e5e5 100%);
+  }
+
+  &:active::before {
+    background: radial-gradient(#a4a4a4, #a4a4a4 30%, #d5d5d5 30%, #d5d5d5 100%);
+  }
 }
 
-.feedback-form__field--checkbox:checked + .feedback-form__field-name::before {
-  background: #f2f2f2 url("@{path-images}/icon-tick.svg") center center no-repeat;
+.feedback-form__field--checkbox:checked + .feedback-form__field-name {
+  &::before {
+    background: #f2f2f2 url("@{path-images}/icon-tick.svg") center center no-repeat;
+  }
+
+  &:hover::before {
+    background: #e5e5e5 url("@{path-images}/icon-tick.svg") center center no-repeat;
+  }
+
+  &:active::before {
+    background: #d5d5d5 url("@{path-images}/icon-tick-active.svg") center center no-repeat;
+  }
 }
 
 .feedback-form__group--personal-info .feedback-form__field {
@@ -154,6 +198,19 @@
   border: none;
 
   cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .feedback-form__notification {
