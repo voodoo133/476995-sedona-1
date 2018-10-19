@@ -49,6 +49,7 @@
   }
 }
 
+.search__line-delimiter--tablet,
 .search__line-delimiter--desktop {
   display: none;
 }
@@ -74,9 +75,22 @@
     margin-bottom: 58px;
     padding: 16px 130px;
   }
+
+  .search__line-delimiter--tablet {
+    display: block;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .search__header {
+    margin-top: 9px;
+  }
+
+  .search__button {
+    margin-top: 47px;
+    margin-bottom: 66px;
+  }
+
   .search__line-delimiter--desktop {
     display: block;
   }
