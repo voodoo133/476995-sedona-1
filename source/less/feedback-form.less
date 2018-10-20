@@ -13,18 +13,35 @@
 .feedback-form__group {
   width: 280px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 24px;
 
   border: none;
+
+  &--personal-info {
+    padding-bottom: 16px;
+  }
+
+  &--main-rating {
+    padding-bottom: 29px;
+  }
+
+  &--visited {
+    padding-bottom: 26px;
+  }
 }
 
 .feedback-form__group-header {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 18px;
+  padding-bottom: 2px;
 
   font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+.feedback-form__group--personal-info .feedback-form__group-header {
+  padding-bottom: 0px;
 }
 
 .feedback-form__field-name {
@@ -49,13 +66,22 @@
     cursor: pointer;
   }
 
+  &--radio {
+    margin-bottom: 14px;
+  }
+
+  &--checkbox {
+    margin-top: -5px;
+    margin-bottom: 30px;
+  }
+
   &--radio::before,
   &--checkbox::before {
     content: "";
 
     width: 55px;
     height: 55px;
-    margin-right: 25px;
+    margin-right: 24px;
 
     background: #f2f2f2;
   }
@@ -90,6 +116,7 @@
 .feedback-form__group--personal-info .feedback-form__field-name {
   position: relative;
 
+  margin-bottom: 12px;
   flex-direction: column;
   align-items: flex-start;
 
@@ -101,23 +128,26 @@
     right: 0;
     z-index: 1;
 
-    width: 56px;
-    height: 56px;
+    width: 58px;
+    height: 58px;
 
     background-color: #e6e6e6;
   }
 }
 
 .feedback-form__group--personal-info .feedback-form__field-name-text {
-  margin-left: 20px;
-  margin-bottom: 15px;
+  margin-left: 21px;
+  margin-bottom: 7px;
 }
 
 .feedback-form__field {
-  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
   margin-left: 15px;
-  padding: 20px;
+  padding: 16px 23px;
 
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 
   border: none;
@@ -133,6 +163,8 @@
     height: 160px;
     box-sizing: border-box;
     margin-left: 0;
+    margin-top: -5px;
+    padding: 16px 20px;
 
     resize: none;
   }
@@ -142,7 +174,7 @@
   }
 
   &:focus {
-    padding: 16px;
+    padding: 12px 19px;
 
     background-color: #ffffff;
 
@@ -181,13 +213,13 @@
 .feedback-form__group--personal-info .feedback-form__field {
   align-self: stretch;
   margin-left: 0;
-  padding-right: 76px;
+  padding-right: 79px;
 }
 
 .feedback-form__button {
   width: 100%;
-  margin-top: 50px;
-  padding: 20px 45px;
+  margin-top: 19px;
+  padding: 17px 25px;
 
   font-size: 21px;
   font-weight: 700;
@@ -230,11 +262,13 @@
   .feedback-form {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
   }
 
   .feedback-form__wrapper {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+
     border: none;
 
     &--short {
@@ -250,7 +284,7 @@
 
     &--greeting {
       order: 2;
-      padding-left: 60px;
+      padding-left: 56px;
       padding-right: 0;
       box-sizing: border-box;
 
@@ -263,13 +297,12 @@
     }
 
     &--visited {
-      margin-top: 55px;
+      margin-top: 13px;
       order: 4;
     }
 
     &--text-rating {
       order: 5;
-      margin-top: 70px;
     }
 
     &--form-footer {
@@ -298,21 +331,21 @@
 
   .feedback-form__group--main-rating .feedback-form__group-header,
   .feedback-form__group--greeting .feedback-form__group-header {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
 
     text-align: left;
   }
 
   .feedback-form__group--personal-info .feedback-form__group-header {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   .feedback-form__group--visited .feedback-form__group-header {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 
   .feedback-form__group--text-rating .feedback-form__group-header {
-    margin-bottom: 60px;
+    margin-bottom: 42px;
   }
 
   .feedback-form__group--personal-info .feedback-form__group-header::before,
@@ -350,38 +383,65 @@
     justify-content: center;
   }
 
-  .feedback-form__field-name:last-child {
-    margin-bottom: 20px;
+  .feedback-form__field-name--radio {
+    margin-bottom: 23px;
   }
 
   .feedback-form__field-name--checkbox {
     width: 215px;
+    margin-bottom: 40px;
+
+    &:nth-of-type(2n) {
+      margin-left: auto;
+      margin-right: 77px;
+    }
 
     &:nth-of-type(2n + 1) {
-      margin-right: 40px;
+      margin-left: 97px;
+      margin-right: auto;
     }
   }
 
+  .feedback-form__group--personal-info .feedback-form__field-name {
+    margin-bottom: 23px;
+  }
+
+  .feedback-form__field-name--radio::before, 
+  .feedback-form__field-name--checkbox::before {
+    margin-right: 21px;
+  }
+
   .feedback-form__group--personal-info .feedback-form__field-name-text {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   .feedback-form__group--visited .feedback-form__field-name:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
-  .feedback-form__notification {
-    display: block;
-  }
+  .feedback-form__field {
+    margin-left: 18px;
 
-  .feedback-form__line-delimiter--tablet {
-    display: block;
+    &--textarea {
+      margin-left: 0;
+    }
   }
 
   .feedback-form__button {
     width: 325px;
     box-sizing: border-box;
+    margin-top: 27px;
+    padding: 17px 25px 17px 12px;
   }
+
+  .feedback-form__notification {
+    display: block;
+    margin: 30px 0 0 auto;
+  }
+
+  .feedback-form__line-delimiter--tablet {
+    display: block;
+  }  
 }
 
 @media (min-width: @desktop-width) {
@@ -400,10 +460,23 @@
     &--greeting {
       padding-left: 80px;
     }
+
+    &--personal-info {
+      margin-top: 66px;
+    }
   }
 
   .feedback-form__group--main-rating .feedback-form__group-header {
     padding-left: 80px;
+  }
+
+  .feedback-form__group--main-rating .feedback-form__group-header, 
+  .feedback-form__group--greeting .feedback-form__group-header {
+    margin-bottom: 36px;
+  }
+
+  .feedback-form__group--personal-info .feedback-form__group-header {
+    margin-bottom: 55px;
   }
 
   .feedback-form__group--personal-info .feedback-form__group-header::before,
@@ -419,8 +492,8 @@
     display: flex;
   }
 
-  .feedback-form__group--visited .feedback-form__field-name:last-child {
-    margin-bottom: 20px;
+  .feedback-form__group--visited .feedback-form__group-content {
+    justify-content: space-between;
   }
 
   .feedback-form__group--personal-info .feedback-form__field-name {
@@ -437,22 +510,33 @@
     }
   }
 
-  .feedback-form__group--visited .feedback-form__group-content {
-    justify-content: space-between;
+  .feedback-form__field-name--radio {
+    margin-left: 3px;
   }
 
   .feedback-form__field-name--checkbox {
     width: auto;
   }
 
+  .feedback-form__field-name--checkbox:nth-of-type(2n),
   .feedback-form__field-name--checkbox:nth-of-type(2n + 1) {
+    margin-left: 0;
     margin-right: 0;
   }
+
+  .feedback-form__field-name--checkbox::before {
+    margin-right: 25px;
+  }
+
 
   .feedback-form__group--personal-info .feedback-form__field-name-text {
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 10px;
+    margin-right: 15px;
+  }
+
+  .feedback-form__field-name--email .feedback-form__field--input {
+    width: 315px;
   }
 
   .feedback-form__hidden-text--desktop {
