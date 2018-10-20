@@ -1,13 +1,22 @@
 .page-main__logo {
   height: 160px;
 
-  background: url("@{path-images}/bg-back-mobile@1x.jpg") center center no-repeat;
+  background: url("@{path-images}/bg-intro-triangle-mobile.svg") center bottom no-repeat, url("@{path-images}/text-sedona.svg") center 43% no-repeat, url("@{path-images}/bg-back-mobile@1x.jpg") center bottom, no-repeat;
+
+  background-size: 100%, 230px 45px, 768px 389px;
 
   text-align: center;
 }
 
+.page-main__logo--index {
+  height: 390px;
+
+  background: url("@{path-images}/bg-intro-triangle-mobile.svg") center bottom no-repeat, url("@{path-images}/text-sedona-index.svg") center 52% no-repeat, url("@{path-images}/bg-back-mobile@1x.jpg") center center no-repeat;
+  background-size: contain, 280px 213px, cover;
+}
+
 .page-main__header {
-  margin: 40px 0 0 0;
+  margin: 37px 0 0 0;
   padding: 0;
 
   font-size: 18px;
@@ -19,12 +28,22 @@
   .page-main__logo {
     height: 290px;
 
-    background: url("@{path-images}/bg-back-tablet@1x.jpg") center center no-repeat;
+    background: url("@{path-images}/bg-intro-triangle-tablet.svg") center bottom no-repeat, url("@{path-images}/text-sedona.svg") center 45% no-repeat, url("@{path-images}/bg-back-tablet@1x.jpg") center bottom no-repeat;
+    background-size: 100%, 455px 80px;
+
+    &--index {
+      height: 518px;
+
+      background: url("@{path-images}/bg-intro-triangle-tablet.svg") center bottom no-repeat, url("@{path-images}/text-sedona-index.svg") center 46% no-repeat, url("@{path-images}/bg-back-tablet@1x.jpg") center center no-repeat;
+      background-size: 768px, 470px 350px, cover;
+    }
   }
 
   .page-main__header {
-    width: 215px;
-    margin: 80px auto 0 auto;
+    width: 320px;
+    margin: 75px auto 0 auto;
+
+    font-size: 30px;
   }
 }
 
@@ -32,6 +51,17 @@
   .page-main__logo {
     height: 300px;
 
-    background: url("@{path-images}/bg-back-desktop@1x.jpg") center center no-repeat;
+    background: url("@{path-images}/bg-intro-triangle-desktop.svg") center bottom no-repeat, url("@{path-images}/text-sedona.svg") center 46% no-repeat, url("@{path-images}/bg-back-desktop@1x.jpg") center bottom no-repeat;
+
+    &--index {
+      height: 517px;
+
+      background: url("@{path-images}/bg-intro-triangle-desktop.svg") center bottom no-repeat, url("@{path-images}/text-sedona-index.svg") center 46% no-repeat, url("@{path-images}/bg-back-desktop@1x.jpg") center center no-repeat;
+      background-size: 1200px, 470px 350px, cover;
+    }
+  }
+
+  .page-main__header {
+    margin-top: 113px;
   }
 }

@@ -1,35 +1,35 @@
 .greeting {
+  position: relative;
+
   width: 100%;
-  padding-top: 390px;
 
   text-align: center;
+}
 
-  background: url("@{path-images}/bg-back-mobile@1x.jpg") center top no-repeat;
+.greeting__logo-text {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+
+  transform: translateX(-50%);
 }
 
 .greeting__text {
-  margin: 45px 0 0 0;
+  margin: 40px 0 0 0;
   padding: 0;
 
   font-weight: bold;
 }
 
 @media (min-width: @tablet-width) {
-  .greeting {
-    padding-top: 520px;
-
-    background: url("@{path-images}/bg-back-tablet@1x.jpg") center top no-repeat;
-  }
-
   .greeting__text {
     width: 445px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+    margin: 50px auto 0;
 
-@media (min-width: @desktop-width) {
-  .greeting {
-    background: url("@{path-images}/bg-back-desktop@1x.jpg") center top no-repeat;
+    font-size: 21px;
+  }
+
+  .greeting__line-delimiter--mobile {
+    display: none;
   }
 }

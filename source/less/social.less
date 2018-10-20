@@ -6,6 +6,9 @@
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   margin-right: 5px;
@@ -15,6 +18,35 @@
   color: #ffffff;
 
   &:last-child {
+    margin-right: 0;
+  }
+
+  cursor: pointer;
+}
+
+.social__svg-logo {
+  fill: #ffffff;
+}
+
+.social__item:hover {
+  background-color: #669ec0;
+}
+
+.social__item:active {
+  background-color: #5496bd;
+
+  .social__svg-logo {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: 151px;
+    justify-content: space-between;
+  }
+
+  .social__item {
     margin-right: 0;
   }
 }

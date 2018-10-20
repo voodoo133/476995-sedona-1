@@ -7,7 +7,27 @@
 }
 
 .copyright__text {
-  margin-right: 5px;
+  margin-right: 13px;
 
   font-size: 14px;
+}
+
+.copyright__svg-logo:hover {
+  fill: #81b3d2;
+}
+
+.copyright__svg-logo:active {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__text {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright__text {
+    margin-left: 6px;
+  }
 }
