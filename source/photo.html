@@ -28,9 +28,11 @@
             </ul>
           </nav>
           <a class="page-header__logo reset-decoration" href="#">
-            <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="187" height="96" alt="Логотип сайта" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
+            </picture>
           </a>
           <button class="page-header__open-menu" type="button"></button>
         </div>
@@ -47,9 +49,11 @@
               <li class="photos__item photo">
                 <div class="photo__wrapper">
                   <a class="photo__link reset-decoration" href="img/photo-sunset-mobile@1x.jpg">
-                    <img class="photo__picture photo__picture--mobile" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы" />
-                    <img class="photo__picture photo__picture--tablet" src="img/photo-sunset-tablet@1x.jpg" width="648" height="400" alt="Неродные просторы" />
-                    <img class="photo__picture photo__picture--desktop" src="img/photo-sunset-desktop@1x.jpg" width="1200" height="400" alt="Неродные просторы" />
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                      <img class="photo__picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы" />
+                    </picture>
                   </a>
                   <div class="photo__text-wrapper">
                     <h3 class="photo__header">Неродные просторы</h3>
@@ -72,9 +76,11 @@
               <li class="photos__item photo">
                 <div class="photo__wrapper photo__wrapper--short">
                   <a class="photo__link reset-decoration" href="img/photo-cactus-mobile@1x.jpg">
-                    <img class="photo__picture photo__picture--mobile" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность" />
-                    <img class="photo__picture photo__picture--tablet" src="img/photo-cactus-tablet@1x.jpg" width="324" height="267" alt="Местная растительность" />
-                    <img class="photo__picture photo__picture--desktop" src="img/photo-cactus-desktop@1x.jpg" width="400" height="267" alt="Местная растительность" />
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                      <img class="photo__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность" />
+                    </picture>
                   </a>
                   <div class="photo__text-wrapper">
                     <h3 class="photo__header">Местная растительность</h3>
@@ -97,9 +103,11 @@
               <li class="photos__item photo">
                 <div class="photo__wrapper photo__wrapper--short">
                   <a class="photo__link reset-decoration" href="img/photo-roads-mobile@1x.jpg">
-                    <img class="photo__picture photo__picture--mobile" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север" />
-                    <img class="photo__picture photo__picture--tablet" src="img/photo-roads-tablet@1x.jpg" width="324" height="267" alt="Дорога на север" />
-                    <img class="photo__picture photo__picture--desktop" src="img/photo-roads-desktop@1x.jpg" width="400" height="267" alt="Дорога на север" />
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                      <img class="photo__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север" />
+                    </picture>
                   </a>
                   <div class="photo__text-wrapper">
                     <h3 class="photo__header">Дорога на север</h3>
@@ -122,9 +130,11 @@
               <li class="photos__item photo">
                 <div class="photo__wrapper photo__wrapper--short">
                   <a class="photo__link reset-decoration" href="img/photo-bridge-mobile@1x.jpg">
-                    <img class="photo__picture photo__picture--mobile" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола" />
-                    <img class="photo__picture photo__picture--tablet" src="img/photo-bridge-tablet@1x.jpg" width="324" height="267" alt="Мост дьявола" />
-                    <img class="photo__picture photo__picture--desktop" src="img/photo-bridge-desktop@1x.jpg" width="400" height="267" alt="Мост дьявола" />
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="photo__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" />
+                    </picture>
                   </a>
                   <div class="photo__text-wrapper">
                     <h3 class="photo__header">Мост дьявола</h3>
@@ -154,9 +164,11 @@
           </div>
           <div class="video__content-wrapper">
             <div class="video__content">
-              <img class="video__preview video__preview--mobile" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Превью видео" />
-              <img class="video__preview video__preview--tablet" src="img/video-tablet@1x.jpg" width="648" height="499" alt="Превью видео" />
-              <img class="video__preview video__preview--desktop" src="img/video-desktop@1x.jpg" width="800" height="500" alt="Превью видео" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Превью видео" />
+              </picture>
             </div>
             <div class="video__controls">
               <div class="video__bar">

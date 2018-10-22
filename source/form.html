@@ -28,9 +28,11 @@
             </ul>
           </nav>
           <a class="page-header__logo reset-decoration" href="#">
-            <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="187" height="96" alt="Логотип сайта" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
+            </picture>
           </a>
           <button class="page-header__open-menu" type="button"></button>
         </div>
@@ -89,7 +91,7 @@
               </div>
               <div class="feedback-form__wrapper feedback-form__wrapper--visited">
                 <fieldset class="feedback-form__group feedback-form__group--visited feedback-form__group--checkboxes">
-                  <legend class="feedback-form__group-header">Посещенные <br class="feedback-form__line-delimiter feedback-form__line-delimiter--tablet"> достопримечательности:</legend>
+                  <legend class="feedback-form__group-header">Посещенные <br class="feedback-form__line-delimiter"> достопримечательности:</legend>
                   <div class="feedback-form__group-content">
                     <input class="feedback-form__field feedback-form__field--checkbox" id="devil-bridge" type="checkbox" name="visited" value="Мост дьявола" checked/>
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="devil-bridge">Мост Дьявола</label>
