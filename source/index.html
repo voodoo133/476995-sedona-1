@@ -28,9 +28,11 @@
             </ul>
           </nav>
           <a class="page-header__logo reset-decoration" href="#">
-            <img class="page-header__logo-image page-header__logo-image--mobile" src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--tablet" src="img/logo-sedona-tablet.svg" width="102" height="84" alt="Логотип сайта" />
-            <img class="page-header__logo-image page-header__logo-image--desktop" src="img/logo-sedona-desktop.svg" width="187" height="96" alt="Логотип сайта" />
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
+            </picture>
           </a>
           <button class="page-header__open-menu" type="button"></button>
         </div>
@@ -60,9 +62,11 @@
                   <p class="advantage-expanded__description">Cедона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <div class="advantage-expanded__picture-wrapper">
-                  <img class="advantage-expanded__picture advantage-expanded__picture--mobile" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фотография города" />
-                  <img class="advantage-expanded__picture advantage-expanded__picture--tablet" src="img/main-city-tablet@1x.jpg" width="512" height="256" alt="Фотография города" />
-                  <img class="advantage-expanded__picture advantage-expanded__picture--desktop" src="img/main-city-desktop@1x.jpg" width="800" height="400" alt="Фотография города" />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+                    <img class="advantage-expanded__picture" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фотография города" />
+                  </picture>
                 </div>
               </li>
               <li class="advantages__item advantages__item--apartments advantage advantage--apartments">
@@ -90,9 +94,11 @@
                   <p class="advantage-expanded__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <div class="advantage-expanded__picture-wrapper advantage-expanded__picture-wrapper--reverse">
-                  <img class="advantage-expanded__picture advantage-expanded__picture--mobile" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фотография каньона" />
-                  <img class="advantage-expanded__picture advantage-expanded__picture--tablet" src="img/main-bridge-tablet@1x.jpg" width="512" height="256" alt="Фотография каньона" />
-                  <img class="advantage-expanded__picture advantage-expanded__picture--desktop" src="img/main-bridge-desktop@1x.jpg" width="800" height="400" alt="Фотография каньона" />
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+                    <img class="advantage-expanded__picture" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Фотография каньона" />
+                  </picture>
                 </div>
               </li>
               <li class="advantages__item advantages__item--small-area advantage advantage--numeric advantage--small-area">
@@ -130,9 +136,11 @@
         </section>
         <section class="map">
           <h2 class="map__header visually-hidden">Карта</h2>
-          <img class="map__picture map__picture--mobile" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта" />
-          <img class="map__picture map__picture--tablet" src="img/bg-map-tablet@1x.jpg" width="768" height="350" alt="Карта" />
-          <img class="map__picture map__picture--desktop" src="img/bg-map-desktop@1x.jpg" width="1200" height="350" alt="Карта" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img class="map__picture " src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта" />
+          </picture>
           <img class="map__map-marker" src="img/icon-map-marker.svg" width="28" height="28" alt="Указатель на карте" />
         </section>
       </main>

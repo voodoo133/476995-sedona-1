@@ -28,6 +28,10 @@
   font-weight: 700;
 }
 
+.photo__picture {
+  display: block;
+}
+
 .photo__author {
   margin: -1px 0 0 0;
   padding: 0;
@@ -54,11 +58,6 @@
   fill: #b2b2b2;
 }
 
-.photo__picture--tablet,
-.photo__picture--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .photo {
     display: flex;
@@ -73,14 +72,6 @@
     width: auto;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  .photo__picture--mobile {
-    display: none;
-  }
-
-  .photo__picture--tablet {
-    display: block;
   }
 
   .photo__text-wrapper {
@@ -125,14 +116,6 @@
 @media (min-width: @desktop-width) {
   .photo {
     position: relative;
-  }
-
-  .photo__picture--tablet {
-    display: none;
-  }
-
-  .photo__picture--desktop {
-    display: block;
   }
 
   .photo__text-wrapper,

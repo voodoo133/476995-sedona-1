@@ -69,11 +69,6 @@
 
 .advantage-expanded__picture {
   display: block;
-
-  &--tablet,
-  &--desktop {
-    display: none;
-  }
 }
 
 .advantage-expanded__line-delimiter--desktop {
@@ -140,14 +135,6 @@
   .advantage-expanded__picture {
     margin-top: 0;
   }
-
-  .advantage-expanded__picture--mobile {
-    display: none;
-  }
-
-  .advantage-expanded__picture--tablet {
-    display: block;
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -170,14 +157,6 @@
     width: 800px;
     height: 257px;
     overflow: hidden;
-  }
-
-  .advantage-expanded__picture--tablet {
-    display: none;
-  }
-
-  .advantage-expanded__picture--desktop {
-    display: block;
   }
 
   .advantage-expanded--devil-bridge .advantage-expanded__description {
