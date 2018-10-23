@@ -36,6 +36,6 @@ gulp.task("start", gulp.series("css", "server"));
 
 gulp.task("to-webp", function () {
   return gulp.src("source/img/**/*.{jpg, png}")
-             .pipe(webp({ quality: 80 }))
-             .pipe(gulp.dest("source/img"));
+    .pipe(webp({ quality: 80 }))
+    .pipe(gulp.dest("source/img"));
 });
