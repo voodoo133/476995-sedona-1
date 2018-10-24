@@ -12,7 +12,7 @@ var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 
-/* Сжатие скриптов */ 
+/* Сжатие скриптов */
 var minify = require('gulp-minify');
 
 /* Вспомогательные модули */
@@ -103,7 +103,7 @@ gulp.task("minify-js", function () {
     .pipe(minify({
       ext: {
         min: ".min.js"
-      }  
+      }
     }))
     .pipe(gulp.dest("build/js"));
 });
