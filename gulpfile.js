@@ -12,6 +12,9 @@ var svgstore = require("gulp-svgstore");
 var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 
+/* Сжатие скриптов */ 
+var minify = require('gulp-minify');
+
 /* Вспомогательные модули */
 var del = require("del");
 var rename = require("gulp-rename");
@@ -93,12 +96,25 @@ gulp.task("copy-html", function () {
     .pipe(gulp.dest("build"));
 });
 
+gulp.task("minify-js", function () {
+  return gulp.src([
+      "source/js/*.js"
+    ])
+    .pipe(minify({
+      ext: {
+        min: ".min.js"
+      }  
+    }))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("make-build", gulp.series(
   "clean-build",
   "copy-files",
   "make-css",
   "make-svg-sprite",
-  "copy-html"
+  "copy-html",
+  "minify-js"
 ));
 
 gulp.task("run-server", function () {
@@ -113,6 +129,7 @@ gulp.task("run-server", function () {
   gulp.watch("source/less/**/*.less", gulp.series("make-css"));
   gulp.watch(images_for_sprite, gulp.series("make-svg-sprite", "refresh-server"));
   gulp.watch("source/*.html", gulp.series("copy-html", "refresh-server"));
+  gulp.watch("source/js/*.js", gulp.series("minify-js", "refresh-server"));
 });
 
 gulp.task("refresh-server", function (done) {

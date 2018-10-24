@@ -1,17 +1,28 @@
 .main-nav {
   position: relative;
 
+  display: none;
+
   line-height: 40px;
   font-weight: 700;
   color: #ffffff;
 
   background-color: #81b3d2;
+
+  &--opened {
+    display: block;
+  }
+}
+
+.no-js .main-nav {
+  display: block;
 }
 
 .main-nav__close-menu {
   position: absolute;
   top: 17px;
   right: 20px;
+  z-index: 9999;
 
   width: 23px;
   height: 23px;
@@ -70,6 +81,8 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    display: block;
+
     font-size: 14px;
     line-height: 26px;
     color: #000000;
