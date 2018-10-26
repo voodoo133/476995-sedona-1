@@ -15,3 +15,5 @@ button_menu_close.onclick = function (e) {
   e.preventDefault();
   menu.classList.remove('main-nav--opened');
 }
+
+svg4everybody();

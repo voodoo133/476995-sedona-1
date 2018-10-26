@@ -71,18 +71,10 @@
   display: block;
 }
 
-.advantage-expanded__line-delimiter--desktop {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .advantage-expanded {
     display: flex;
     width: 100%;
-  }
-
-  .advantage-expanded--real-city .advantage-expanded__text-wrapper {
-    background: #81b3d2;
   }
 
   .advantage-expanded--real-city .advantage-expanded__header,
@@ -107,12 +99,17 @@
     padding-right: 45px;
     margin-left: auto;
     margin-right: 0;
+    box-sizing: border-box;
 
     &--reverse {
       margin-left: 0;
       margin-right: auto;
       order: 2;
     }
+  }
+
+  .advantage-expanded--real-city .advantage-expanded__text-wrapper {
+    background: #81b3d2;
   }
 
   .advantage-expanded__description {

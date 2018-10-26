@@ -44,7 +44,8 @@ gulp.task("clean-build", function () {
 gulp.task("copy-files", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**"
+      "source/img/**",
+      "source/js/**/*.min.js"
     ], {
       base: "source"
     })
@@ -104,7 +105,7 @@ gulp.task("minify-html", function () {
 
 gulp.task("minify-js", function () {
   return gulp.src([
-      "source/js/*.js"
+      "source/js/*.js", "!source/js/*.min.js"
     ])
     .pipe(minify_js({
       ext: {
