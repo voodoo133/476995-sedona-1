@@ -13,10 +13,9 @@
       <header class="page-header">
         <div class="wrapper wrapper--page-header">
           <nav class="main-nav">
-            <button class="main-nav__close-menu" type="button"></button>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link reset-decoration" href="index.html">Главная</a>
+                <a class="main-nav__link reset-decoration" href="/">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link reset-decoration" href="photo.html">Фото и видео</a>
@@ -25,18 +24,20 @@
                 <a class="main-nav__link reset-decoration" href="form.html">Форма отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link reset-decoration" href="https://htmlacademy.ru">Html academy</a>
+                <a class="main-nav__link reset-decoration" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
               </li>
             </ul>
           </nav>
-          <a class="page-header__logo reset-decoration" href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
-            </picture>
-          </a>
-          <button class="page-header__open-menu" type="button"></button>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo reset-decoration" href="/">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
+              </picture>
+            </a>
+          </div>
+          <button class="page-header__control-menu" type="button"></button>
         </div>
       </header>
       <main class="page-main">
@@ -139,11 +140,12 @@
           <div class="wrapper">
             <h2 class="search__header">Заинтересовались?</h2>
             <p class="search__text">Укажите предполагаемые даты поездки,<br class="search__line-delimiter"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="search__button reset-decoration" href="#">Найти гостиницу</a>
+            <a class="search__button reset-decoration" href="search.html">Найти гостиницу</a>
           </div>
         </section>
         <section class="map">
           <h2 class="map__header visually-hidden">Карта</h2>
+          <iframe class="map__google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050594325!2d-111.83015781523066!3d34.85437338108448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522124357024" allowfullscreen></iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
@@ -177,7 +179,7 @@
           </ul>
           <div class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано</span>
-            <a class="copyright__link reset-decoration" href="https://htmlacademy.ru">
+            <a class="copyright__link reset-decoration" href="https://htmlacademy.ru/intensive/adaptive">
               <svg class="copyright__svg-logo" width="26.943px" height="34.09px">
                 <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
               </svg>
