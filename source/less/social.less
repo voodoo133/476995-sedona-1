@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 48px;
   height: 48px;
   margin-right: 5px;
@@ -42,11 +43,20 @@
 
 @media (min-width: @tablet-width) {
   .social {
-    width: 151px;
-    justify-content: space-between;
+    min-width: 151px;
+    max-width: 216px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .social__item {
-    margin-right: 0;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    min-width: 151px;
+    max-width: 400px;
   }
 }
