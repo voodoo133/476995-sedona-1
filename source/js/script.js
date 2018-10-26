@@ -7,7 +7,7 @@ var menu = document.querySelector('.main-nav');
 
 control_menu.onclick = function (e) {
   e.preventDefault();
-  
+
   control_menu.classList.toggle('page-header__control-menu--close');
   menu.classList.toggle('main-nav--opened');
 }
