@@ -1,0 +1,168 @@
+.modal {
+  position: absolute;
+  z-index: 99999;
+
+  display: none;
+
+  text-align: center;
+
+  background-color: #ffffff;
+  box-shadow: 0px 0 10px 5px rgba(0,0,0,.1);
+
+  &--failure {
+    bottom: 720px;
+    
+    width: 320px;
+    height: 280px;
+    padding: 0 55px;
+    box-sizing: border-box;
+  }
+
+  &--success {
+    bottom: 348px;
+
+    display: block;
+
+    width: 320px;
+    height: 325px;
+  }
+}
+
+.modal__header {
+  margin: 0;
+  padding: 0;
+  
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal--failure .modal__header {
+  margin: 40px auto 0;
+}
+
+.modal--success .modal__header {
+  width: 235px;
+  margin: 43px auto 0;
+}
+
+.modal__text {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modal--failure .modal__text {
+  margin: 26px auto 0;
+}
+
+.modal--success .modal__text {
+  width: 235px;
+  margin: 26px auto 0;
+}
+
+.modal__footer {
+  margin-top: 34px;
+  padding: 20px;
+
+  background-color: #f2f2f2;
+}
+
+.modal__button {
+  height: 58px;
+  padding: 17px;
+  box-sizing: border-box;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+  background-color: #81b3d2;
+}
+
+.modal--failure .modal__button {
+  width: 182px;
+  margin-top: 23px;
+}
+
+.modal--success .modal__button {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    &--failure {
+      bottom: 352px;
+
+      width: 400px;
+      height: 348px;
+      padding: 0 50px;
+    }
+
+    &--success {
+      bottom: 513px;
+
+      width: 640px;
+      height: 348px;
+    }
+  }
+
+  .modal__header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .modal--failure .modal__header {
+    width: 220px;
+    margin: 55px auto 0; 
+  }
+
+  .modal--success .modal__header {
+    width: auto;
+    margin: 56px auto 0;
+  }
+
+  .modal--failure .modal__text {
+    margin: 25px auto 0;
+  }
+
+  .modal--success .modal__text {
+    width: 420px;
+    margin: 23px auto 0;
+  }
+
+  .modal__footer {
+    padding: 45px;
+  }
+
+  .modal__button {
+    font-size: 21px;
+  }
+
+  .modal--failure .modal__button {
+    width: 271px;
+    height: 57px;
+    margin-top: 32px;
+  }
+
+  .modal--success .modal__button {
+    width: 457px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .modal--failure {
+    bottom: 239px;
+  }
+
+  .modal--success {
+    bottom: 510px;
+  }
+}
