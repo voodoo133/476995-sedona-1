@@ -13,7 +13,10 @@ var webp = require("gulp-webp");
 var imagemin = require("gulp-imagemin");
 
 /* Сжатие скриптов */
-var minify = require('gulp-minify');
+var minify_js = require('gulp-minify');
+
+/* Сжатие HTML */
+var minify_html = require('gulp-htmlmin');
 
 /* Вспомогательные модули */
 var del = require("del");
@@ -41,7 +44,8 @@ gulp.task("clean-build", function () {
 gulp.task("copy-files", function () {
   return gulp.src([
       "source/fonts/**/*.{woff,woff2}",
-      "source/img/**"
+      "source/img/**",
+      "source/js/**/*.min.js"
     ], {
       base: "source"
     })
@@ -87,20 +91,23 @@ gulp.task("make-svg-sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("copy-html", function () {
+gulp.task("minify-html", function () {
   return gulp.src([
       "source/*.html"
     ], {
       base: "source"
     })
+    .pipe(minify_html({
+      collapseWhitespace: true
+    }))
     .pipe(gulp.dest("build"));
 });
 
 gulp.task("minify-js", function () {
   return gulp.src([
-      "source/js/*.js"
+      "source/js/*.js", "!source/js/*.min.js"
     ])
-    .pipe(minify({
+    .pipe(minify_js({
       ext: {
         min: ".min.js"
       }
@@ -113,7 +120,7 @@ gulp.task("make-build", gulp.series(
   "copy-files",
   "make-css",
   "make-svg-sprite",
-  "copy-html",
+  "minify-html",
   "minify-js"
 ));
 
@@ -127,8 +134,7 @@ gulp.task("run-server", function () {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("make-css"));
-  gulp.watch(images_for_sprite, gulp.series("make-svg-sprite", "refresh-server"));
-  gulp.watch("source/*.html", gulp.series("copy-html", "refresh-server"));
+  gulp.watch("source/*.html", gulp.series("minify-html", "refresh-server"));
   gulp.watch("source/js/*.js", gulp.series("minify-js", "refresh-server"));
 });
 

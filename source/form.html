@@ -4,37 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона - Форма отзыва</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css" />
   </head>
-  <body class="page-body">
+  <body class="page-body no-js">
     <div class="body-wrapper">
       <header class="page-header">
         <div class="wrapper wrapper--page-header">
           <nav class="main-nav">
-            <button class="main-nav__close-menu" type="button"></button>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link reset-decoration" href="index.html">Главная</a>
+                <div class="main-nav__link-wrapper">
+                  <a class="main-nav__link reset-decoration" href="/">Главная</a>
+                </div>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link reset-decoration" href="photo.html">Фото и видео</a>
+                <div class="main-nav__link-wrapper">
+                  <a class="main-nav__link reset-decoration" href="photo.html">Фото и видео</a>
+                </div>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active reset-decoration" href="form.html">Форма отзыва</a>
+                <div class="main-nav__link-wrapper">
+                  <a class="main-nav__link main-nav__link--active reset-decoration" href="form.html">Форма отзыва</a>
+                </div>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link reset-decoration" href="https://htmlacademy.ru">Html academy</a>
+                <div class="main-nav__link-wrapper">
+                  <a class="main-nav__link reset-decoration" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+                </div>
               </li>
             </ul>
           </nav>
-          <a class="page-header__logo reset-decoration" href="#">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" srcset="" alt="Логотип сайта" />
-            </picture>
-          </a>
-          <button class="page-header__open-menu" type="button"></button>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo reset-decoration" href="/">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип сайта" />
+              </picture>
+            </a>
+          </div>
+          <button class="page-header__control-menu" type="button"></button>
         </div>
       </header>
       <main class="page-main">
@@ -43,6 +54,7 @@
           <h1 class="page-main__header">Оставьте свой отзыв</h1>
         </div>
         <section class="feedback">
+          <h2 class="visually-hidden">Ваш отзыв о курорте</h2>
           <div class="wrapper wrapper--feedback">
             <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -51,21 +63,23 @@
                   <legend class="feedback-form__group-header">Представьтесь:</legend>
                   <label class="feedback-form__field-name">
                     <span class="feedback-form__field-name-text">Имя*</span>
-                    <input class="feedback-form__field feedback-form__field--input" type="text" name="first_name" value="Петр" />
+                    <input class="feedback-form__field feedback-form__field--input feedback-form__field--first-name" type="text" name="first_name" value="Петр" />
                   </label>
                   <label class="feedback-form__field-name">
                     <span class="feedback-form__field-name-text">Фамилия*</span>
-                    <input class="feedback-form__field feedback-form__field--input" type="text" name="second_name" value="Иванов" />
+                    <input class="feedback-form__field feedback-form__field--input feedback-form__field--second-name" type="text" name="second_name" value="Иванов" />
                   </label>
                   <label class="feedback-form__field-name">
                     <span class="feedback-form__field-name-text">Отчество</span>
-                    <input class="feedback-form__field feedback-form__field--input" type="text" name="middle_name" value="Александрович" />
+                    <input class="feedback-form__field feedback-form__field--input feedback-form__field--middle-name" type="text" name="middle_name" value="Александрович" />
                   </label>
                 </fieldset>
               </div>
               <div class="feedback-form__wrapper feedback-form__wrapper--personal-info">
                 <fieldset class="feedback-form__group feedback-form__group--personal-info">
-                  <legend class="feedback-form__group-header">Контактная информация:</legend>
+                  <legend class="feedback-form__group-header">
+                    <span class="feedback-form__group-header-text">Контактная информация:</span>
+                  </legend>
                   <div class="feedback-form__group-content">
                     <label class="feedback-form__field-name feedback-form__field-name--phone">
                       <span class="feedback-form__field-name-text"><span class="feedback-form__hidden-text feedback-form__hidden-text--desktop">Контактный </span>телефон*:</span>
@@ -91,7 +105,9 @@
               </div>
               <div class="feedback-form__wrapper feedback-form__wrapper--visited">
                 <fieldset class="feedback-form__group feedback-form__group--visited feedback-form__group--checkboxes">
-                  <legend class="feedback-form__group-header">Посещенные <br class="feedback-form__line-delimiter"> достопримечательности:</legend>
+                  <legend class="feedback-form__group-header">
+                    <span class="feedback-form__group-header-text">Посещенные достопримечательности:</span>
+                  </legend>
                   <div class="feedback-form__group-content">
                     <input class="feedback-form__field feedback-form__field--checkbox" id="devil-bridge" type="checkbox" name="visited" value="Мост дьявола" checked/>
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="devil-bridge">Мост Дьявола</label>
@@ -104,9 +120,11 @@
                   </div>
                 </fieldset>
               </div>
-              <div class="feedback-form__wrapper feedback-form__wrapper--text-rating"">
+              <div class="feedback-form__wrapper feedback-form__wrapper--text-rating">
                 <fieldset class="feedback-form__group feedback-form__group--text-rating">
-                  <legend class="feedback-form__group-header">Опишите свои эмоции:</legend>
+                  <legend class="feedback-form__group-header">
+                    <span class="feedback-form__group-header-text">Опишите свои эмоции:</span>
+                  </legend>
                   <textarea class="feedback-form__field feedback-form__field--textarea" name="text_description">Опишите подробно все свои восторги</textarea>
                 </fieldset>
               </div>
@@ -123,32 +141,55 @@
           <p class="page-footer__hashtag">#Visitsedona</p>
           <ul class="page-footer__social social">
             <li class="social__item social__item--twitter">
-              <svg class="social__svg-logo" width="17.5px" height="14.663px">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-              </svg>
+              <a class="social__link reset-decoration" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="social__svg-logo" width="17.5" height="14.663">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item social__item--facebook">
-              <svg class="social__svg-logo" width="8.672px" height="18.944px">
-                <use xlink:href="img/sprite.svg#icon-facebook"></use>
-              </svg>
+              <a class="social__link reset-decoration" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="social__svg-logo" width="8.672" height="18.944">
+                  <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item social__item--youtube">
-              <svg class="social__svg-logo" width="19.979px" height="14.015px">
-                <use xlink:href="img/sprite.svg#icon-youtube"></use>
-              </svg>
+              <a class="social__link reset-decoration" href="#">
+                <span class="visually-hidden">Youtube</span>
+                <svg class="social__svg-logo" width="19.979" height="14.015">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
+              </a>
             </li>
           </ul>
           <div class="page-footer__copyright copyright">
             <span class="copyright__text">Разработано</span>
-            <a class="copyright__link reset-decoration" href="https://htmlacademy.ru">
-              <svg class="copyright__svg-logo" width="26.943px" height="34.09px">
+            <a class="copyright__link reset-decoration" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__svg-logo" width="26.943" height="34.09">
                 <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
               </svg>
             </a>
           </div>
         </div>
       </footer>
+      <div class="modal modal--failure">
+        <h2 class="modal__header">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button" type="button">Ок</button>
+      </div>
+      <div class="modal modal--success">
+        <h2 class="modal__header">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__footer">
+          <button class="modal__button" type="button">Закрыть окно</button>
+        </div>
+      </div>
     </div>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

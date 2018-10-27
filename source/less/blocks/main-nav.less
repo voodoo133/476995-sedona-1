@@ -18,22 +18,6 @@
   display: block;
 }
 
-.main-nav__close-menu {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  z-index: 9999;
-
-  width: 23px;
-  height: 23px;
-  padding: 0;
-
-  background: transparent url("@{path-images}/icon-cross.svg") no-repeat;
-  border: none;
-
-  cursor: pointer;
-}
-
 .main-nav__close-menu-icon {
   fill: #ffffff;
 }
@@ -96,29 +80,49 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
+    width: 160px;
     padding: 15px 0;
 
     border: none;
 
-    &:nth-child(1) {
-      margin-left: 49px;
+    &:nth-child(4n - 3) {
+      text-align: left;
+
+      .main-nav__link-wrapper {
+        padding-left: 49px;
+      }
     }
 
-    &:nth-child(2) {
-      margin-left: 77px;
-      margin-right: auto;
+    &:nth-child(4n - 2) {
+      margin-right: 64px;
+
+      text-align: left;
+
+      .main-nav__link-wrapper {
+        padding-left: 22px;
+      }
     }
 
-    &:nth-child(3) {
-      margin-left: auto;
-      margin-right: 50px;
+    &:nth-child(4n - 1) {
+      margin-left: 64px;
+
+      text-align: right;
+
+      .main-nav__link-wrapper {
+        padding-right: 15px;
+      }
     }
 
-    &:nth-child(4) {
-      margin-right: 27px;
+    &:nth-child(4n) {
+      text-align: right;
+
+      .main-nav__link-wrapper {
+        padding-right: 27px;
+      }
     }
 
     &:last-child {
@@ -135,6 +139,7 @@
   }
 
   .main-nav__link {
+    display: inline;
     color: #000000;
 
     &:hover {
@@ -161,22 +166,35 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__item {
+    width: 250px;
     padding: 15px 0;
 
-    &:nth-child(1) {
-      margin-left: 92px;
+    &:nth-child(4n - 3) {
+      .main-nav__link-wrapper {
+        padding-left: 92px;
+      }
     }
 
-    &:nth-child(2) {
-      margin-left: 162px;
+    &:nth-child(4n - 2) {
+      margin-right: 100px;
+
+      .main-nav__link-wrapper {
+        padding-left: 60px;
+      }
     }
 
-    &:nth-child(3) {
-      margin-right: 138px;
+    &:nth-child(4n - 1) {
+      margin-left: 100px;
+
+      .main-nav__link-wrapper {
+        padding-right: 56px;
+      }
     }
 
-    &:nth-child(4) {
-      margin-right: 69px;
+    &:nth-child(4n) {
+      .main-nav__link-wrapper {
+        padding-right: 70px;
+      }
     }
   }
 }
