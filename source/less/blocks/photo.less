@@ -72,6 +72,10 @@
     width: auto;
     padding-left: 0;
     padding-right: 0;
+
+    &--short {
+      width: 324px;
+    }
   }
 
   .photo__text-wrapper {
@@ -83,15 +87,18 @@
     background-color: #f2f2f2;
   }
 
+  .photo:nth-of-type(2n + 3), 
   .photo:nth-of-type(2n + 3) .photo__text-wrapper {
     background-color: #eaeaea;
   }
 
   .photo__header {
+    padding-right: 100px;
     margin: 0 0 0 20px;
   }
 
   .photo__author {
+    padding-right: 100px;
     margin: 0 0 0 20px;
   }
 
@@ -118,6 +125,10 @@
     position: relative;
 
     background-color: rgba(0,0,0,.3);
+  }
+
+  .photo__wrapper--short {
+    width: 400px;
   }
 
   .photo__text-wrapper,
