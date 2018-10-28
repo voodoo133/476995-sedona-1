@@ -45,7 +45,9 @@
               </picture>
             </a>
           </div>
-          <button class="page-header__control-menu" type="button"></button>
+          <button class="page-header__control-menu" type="button">
+            <span class="visually-hidden">Открыть/закрыть меню</span>
+          </button>
         </div>
       </header>
       <main class="page-main">
@@ -95,11 +97,11 @@
               <div class="feedback-form__wrapper feedback-form__wrapper--short feedback-form__wrapper--main-rating">
                 <fieldset class="feedback-form__group feedback-form__group--short feedback-form__group--main-rating feedback-form__group--radio-buttons">
                   <legend class="feedback-form__group-header">Ваше общее впечатление:</legend>
-                  <input class="feedback-form__field feedback-form__field--radio" id="positive-rating" type="radio" name="rating" value="Скорее положительное" checked/>
+                  <input class="feedback-form__field feedback-form__field--radio visually-hidden" id="positive-rating" type="radio" name="rating" value="Скорее положительное" checked/>
                   <label class="feedback-form__field-name feedback-form__field-name--radio" for="positive-rating">Скорее положительное</label>
-                  <input class="feedback-form__field feedback-form__field--radio" id="negative-rating" type="radio" name="rating" value="Скорее отрицательное" />
+                  <input class="feedback-form__field feedback-form__field--radio visually-hidden" id="negative-rating" type="radio" name="rating" value="Скорее отрицательное" />
                   <label class="feedback-form__field-name feedback-form__field-name--radio" for="negative-rating">Скорее отрицательное</label>
-                  <input class="feedback-form__field feedback-form__field--radio" id="neutral-rating" type="radio" name="rating" value="Затрудняюсь ответить" />
+                  <input class="feedback-form__field feedback-form__field--radio visually-hidden" id="neutral-rating" type="radio" name="rating" value="Затрудняюсь ответить" />
                   <label class="feedback-form__field-name feedback-form__field-name--radio" for="neutral-rating">Затрудняюсь ответить</label>
                 </fieldset>
               </div>
@@ -109,13 +111,13 @@
                     <span class="feedback-form__group-header-text">Посещенные достопримечательности:</span>
                   </legend>
                   <div class="feedback-form__group-content">
-                    <input class="feedback-form__field feedback-form__field--checkbox" id="devil-bridge" type="checkbox" name="visited" value="Мост дьявола" checked/>
+                    <input class="feedback-form__field feedback-form__field--checkbox visually-hidden" id="devil-bridge" type="checkbox" name="visited" value="Мост дьявола" checked/>
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="devil-bridge">Мост Дьявола</label>
-                    <input class="feedback-form__field feedback-form__field--checkbox" id="mountain-bell" type="checkbox" name="visited" value="Гора-Колокол" checked/>
+                    <input class="feedback-form__field feedback-form__field--checkbox visually-hidden" id="mountain-bell" type="checkbox" name="visited" value="Гора-Колокол" checked/>
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="mountain-bell">Гора-Колокол</label>
-                    <input class="feedback-form__field feedback-form__field--checkbox" id="slide-park" type="checkbox" name="visited" value="Слайд-парк" checked/>
+                    <input class="feedback-form__field feedback-form__field--checkbox visually-hidden" id="slide-park" type="checkbox" name="visited" value="Слайд-парк" checked/>
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="slide-park">Слайд-парк</label>
-                    <input class="feedback-form__field feedback-form__field--checkbox" id="red-rocks" type="checkbox" name="visited" value="Красные скалы" />
+                    <input class="feedback-form__field feedback-form__field--checkbox visually-hidden" id="red-rocks" type="checkbox" name="visited" value="Красные скалы" />
                     <label class="feedback-form__field-name feedback-form__field-name--checkbox" for="red-rocks">Красные скалы</label>
                   </div>
                 </fieldset>
