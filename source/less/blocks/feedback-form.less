@@ -139,8 +139,9 @@
 
 .feedback-form__field--radio:focus + .feedback-form__field-name::before,
 .feedback-form__field--checkbox:focus + .feedback-form__field-name::before {
-  outline: dotted thin;
-  outline: -webkit-focus-ring-color auto 5px;
+  outline-width: 2px;
+  outline-style: solid;
+  outline-color: highlight;
 }
 
 .feedback-form__field--radio:checked + .feedback-form__field-name {
@@ -218,7 +219,7 @@
   }
 
   &:focus {
-    padding: 12px 19px;
+    padding: 12px 18px;
 
     background-color: #ffffff;
 
@@ -482,6 +483,10 @@
     &--textarea {
       margin-left: 0;
       padding: 15px 21px;
+
+      &:focus {
+        padding: 11px 17px;
+      }
     }
 
     &--first-name {
@@ -628,14 +633,26 @@
 
   .feedback-form__field--first-name {
     padding-left: 20px;
+
+    &:focus {
+      padding-left: 16px;
+    }
   }
 
   .feedback-form__field--second-name {
     padding-left: 21px;
+    
+    &:focus {
+      padding-left: 17px;
+    }
   }
 
   .feedback-form__field--textarea {
     padding: 16px 22px;
+
+    &:focus {
+      padding: 12px 18px;
+    }
   }
 
   .feedback-form__hidden-text--desktop {
